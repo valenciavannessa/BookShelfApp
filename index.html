@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf App</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <header class="navbar-container">
+      <h1>BOOKSHELF APP</h1>
+      <section>
+        <form id="searchBook" data-testid="searchBookForm">
+          <input
+            id="searchBookTitle"
+            type="text"
+            data-testid="searchBookFormTitleInput"
+            placeholder="Masukkan Judul"
+          />
+          <button
+            id="searchSubmit"
+            type="submit"
+            data-testid="searchBookFormSubmitButton"
+          >
+            Cari Buku
+          </button>
+        </form>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <form id="bookForm" data-testid="bookForm">
+          <div class="card">
+            <h2>TAMBAH BUKU</h2>
+            <div>
+              <label for="bookFormTitle">Judul</label>
+              <input
+                id="bookFormTitle"
+                type="text"
+                required
+                data-testid="bookFormTitleInput"
+              />
+            </div>
+            <div>
+              <label for="bookFormAuthor">Penulis</label>
+              <input
+                id="bookFormAuthor"
+                type="text"
+                required
+                data-testid="bookFormAuthorInput"
+              />
+            </div>
+            <div>
+              <label for="bookFormYear">Tahun</label>
+              <input
+                id="bookFormYear"
+                type="number"
+                required
+                data-testid="bookFormYearInput"
+              />
+            </div>
+            <div>
+              <label for="bookFormIsComplete">Selesai dibaca</label>
+              <input
+                id="bookFormIsComplete"
+                type="checkbox"
+                data-testid="bookFormIsCompleteCheckbox"
+              />
+            </div>
+            <button
+              id="bookFormSubmit"
+              type="submit"
+              data-testid="bookFormSubmitButton"
+            >
+              Masukkan Buku ke rak <span>Belum selesai dibaca</span>
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <div class="card-transparent">
+          <h2>BELUM SELESAI DIBACA</h2>
+          <div id="incompleteBookList" data-testid="incompleteBookList"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="card-transparent">
+          <h2>SELESAI DIBACA</h2>
+          <div id="completeBookList" data-testid="completeBookList"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Bookshelf App by Valencia Vannessa &#169; 2024</p>
+    </footer>
+  </body>
+</html>
