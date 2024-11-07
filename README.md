@@ -24,7 +24,7 @@ The Bookshelf App is a web-based application that allows users to efficiently ma
 - Search for a Book: Type a title in the search bar to find specific books.
 - Delete or Switch Book Status: Use action buttons to delete a book or change its completion status.
 
-**📷 Screenshots**
+**📷 Screenshots:**
 1. Full Display
 ![image](https://github.com/user-attachments/assets/add41dce-f706-429f-b66a-ca7cf4ea6e62)
 
@@ -34,7 +34,7 @@ The Bookshelf App is a web-based application that allows users to efficiently ma
 3. Search Feature
 ![image](https://github.com/user-attachments/assets/4ab34ff6-545d-4ab2-91f3-13c94e48ae04)
 
-**❓Why This Project?**
+**❓ Why This Project?**
 This project was created to demonstrate skills in front-end development and the use of localStorage for state management without a backend. It also showcases proficiency in DOM manipulation, event handling, and building intuitive user interfaces.
 
 **📄 Note**: This project is based on an final submission from the course "Belajar Membuat Front-End Web untuk Pemula" on Dicoding Indonesia. The goal was to implement and expand on the core concepts introduced in the course.
